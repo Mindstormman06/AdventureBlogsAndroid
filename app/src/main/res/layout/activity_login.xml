@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="16dp">
 
     <EditText
         android:id="@+id/usernameInput"
@@ -29,5 +29,4 @@
         android:layout_height="wrap_content"
         android:text="Response will appear here"
         android:paddingTop="20dp"/>
-
 </LinearLayout>
