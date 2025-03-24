@@ -1,9 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.AdventureBlogs" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.AdventureBlogs" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here -->
+        <item name="colorPrimary">@color/adventure_green</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:windowBackground">@color/white</item> <!-- Set the background color here -->
     </style>
+
 
     <style name="Theme.AdventureBlogs" parent="Base.Theme.AdventureBlogs" />
 </resources>

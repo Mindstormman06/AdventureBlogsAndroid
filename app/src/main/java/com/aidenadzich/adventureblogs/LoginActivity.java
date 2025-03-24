@@ -36,7 +36,6 @@ public class LoginActivity extends AppCompatActivity {
         usernameInput = findViewById(R.id.usernameInput);
         passwordInput = findViewById(R.id.passwordInput);
         loginButton = findViewById(R.id.loginButton);
-        resultText = findViewById(R.id.resultText);
 
         loginButton.setOnClickListener(view -> loginUser());
     }
