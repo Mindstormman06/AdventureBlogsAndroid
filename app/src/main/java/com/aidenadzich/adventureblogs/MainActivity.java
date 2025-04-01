@@ -1,5 +1,6 @@
 package com.aidenadzich.adventureblogs;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
@@ -14,6 +15,7 @@ import com.aidenadzich.adventureblogs.adapters.PostAdapter;
 import com.aidenadzich.adventureblogs.models.Post;
 import com.aidenadzich.adventureblogs.network.ApiClient;
 import com.aidenadzich.adventureblogs.network.ApiService;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.gson.Gson;
 
 import org.json.JSONObject;
@@ -39,6 +41,28 @@ public class MainActivity extends AppCompatActivity{
 
         recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
+            int id = item.getItemId();
+
+            if (id == R.id.nav_home) {
+                // Handle home action
+                return true;
+            } else if (id == R.id.nav_add) {
+                Intent intent = new Intent(MainActivity.this, UploadPostActivity.class);
+                startActivity(intent);
+                return true;
+            } else if (id == R.id.nav_map) {
+                // Handle map action
+                return true;
+            } else if (id == R.id.nav_profile) {
+                // Handle profile action
+                return true;
+            }
+            return false;
+        });
+
 
         fetchPosts();
     }
