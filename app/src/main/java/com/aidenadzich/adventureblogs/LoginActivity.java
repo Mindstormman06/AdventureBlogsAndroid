@@ -52,6 +52,8 @@ public class LoginActivity extends AppCompatActivity {
                 // Send request
                 String response = ApiClient.postRequest(API_URL, json.toString());
 
+                Log.d("LoginActivity", "Response: " + response);
+
                 runOnUiThread(() -> {
                     if (response != null && response.contains("success")) {
                         // Navigate to MainActivity

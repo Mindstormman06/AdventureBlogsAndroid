@@ -52,8 +52,7 @@ public class UploadPostActivity extends AppCompatActivity {
         mapView = findViewById(R.id.mapView);
         uploadButton = findViewById(R.id.uploadButton);
         fileButton = findViewById(R.id.fileButton);
-        jwtToken = "eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6IkFkdmVudHVyZUFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzQzNjExNzczfQ=="; // Replace with actual JWT token
-
+        jwtToken = getIntent().getStringExtra("jwt_token");
         uploadButton.setOnClickListener(view -> uploadPost());
         fileButton.setOnClickListener(view -> openFilePicker());
     }
