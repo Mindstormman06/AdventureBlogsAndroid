@@ -4,9 +4,9 @@
 
 ## Features
 
-* **User Authentication**: Secure sign-up and login functionalities to personalize user experience.
-* **Blog Feed**: Browse through a curated list of adventure blog posts.
-* **Create Posts**: Users can compose and publish their own adventure stories.
+* **User Authentication**: Secure sign-up and login functionalities.
+* **Blog Feed**: Browse through a list of adventure blog posts.
+* **Create Posts**: Users can create their own posts.
 
 ## Installation
 
